@@ -1,0 +1,7 @@
+{
+  "name": "lindz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
