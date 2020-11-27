@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, IonTabButton, IonIcon, IonTabBar, IonLabel, IonTabs } from '@ionic/react';
-import { listCircleOutline, trendingUpOutline, createOutline, searchOutline, personCircleOutline } from "ionicons/icons";
+
 import { IonReactRouter } from '@ionic/react-router';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
@@ -44,23 +44,18 @@ const App = () => {
       </IonRouterOutlet>
       <IonTabBar slot="top">
         <IonTabButton tab="home" href="/home">
-          <IonIcon icon={listCircleOutline} />
-          <IonLabel>PAGE 1</IonLabel>
+          <IonLabel>Home</IonLabel>
         </IonTabButton>
           <IonTabButton tab="trending" href="/trending">
-          <IonIcon icon={trendingUpOutline} />
           <IonLabel>PAGE 2</IonLabel>
         </IonTabButton>
         <IonTabButton tab="submit" href="/submit">
-          <IonIcon icon={createOutline} />
           <IonLabel>PAGE 3</IonLabel>
         </IonTabButton>
         <IonTabButton tab="search" href="/search">
-          <IonIcon icon={searchOutline} />
           <IonLabel>PAGE 4</IonLabel>
         </IonTabButton>
         <IonTabButton tab="profile" href="/profile">
-          <IonIcon icon={personCircleOutline} />
           <IonLabel>PAGE 5</IonLabel>
         </IonTabButton>
       </IonTabBar>
